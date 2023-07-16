@@ -10,6 +10,8 @@ Console.WriteLine("Ju lutem zgjidhni nje makine:");
 Console.WriteLine($"1. {audi.Marka} {audi.Modeli}           2. {bmw.Marka} {bmw.Modeli}         3.{mercedes.Marka} {mercedes.Modeli}");
 int opsioni = Convert.ToInt32(Console.ReadLine());
 
+// Ky eshte nje koment
+
 if (opsioni == 1)
 {
     audi.Specifikimi(audi);
@@ -63,7 +65,7 @@ else if (opsioni == 2)
             Random rnd = new Random();
             int km = rnd.Next(1, 200);
 
-            bmw.Xhiro();
+            bmw.Xhiro(bmw);
 
             // BMW harxhon 9.6l - 100 km => 0.096l - 1km
             // Cmimi aktual i benzines = 179 LEK / l
@@ -88,7 +90,7 @@ else if (opsioni == 2)
         }
         else if (op == 4)
         {
-            bmw.Furnizo();
+            bmw.Furnizo(bmw);
             continue;
         }
         else if (op == 0)
@@ -116,7 +118,7 @@ else if (opsioni == 3)
             Random rnd = new Random();
             int km = rnd.Next(1, 200);
 
-            mercedes.Xhiro();
+            mercedes.Xhiro(mercedes);
 
             // Mercedes harxhon 13.4l - 100 km => 0.134l - 1km
             // Cmimi aktual i benzines = 179 LEK / l
@@ -141,7 +143,7 @@ else if (opsioni == 3)
         }
         else if (op == 4)
         {
-            mercedes.Furnizo();
+            mercedes.Furnizo(mercedes);
             continue;
         }
         else if (op == 0)
